@@ -1,6 +1,11 @@
-
 numbers = list(map(int, input().split()))
+average = sum(numbers)/len(numbers)
+dist = []
 
+for i in range(len(numbers)):
+    dist.append(average - numbers[i])
+
+print (f'{dist:.2f}', end=' ')
 # ******************************
 # Make your Code
 # ******************************

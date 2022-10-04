@@ -3,7 +3,7 @@ average = sum(numbers)/len(numbers)
 dist = []
 
 for i in range(len(numbers)):
-    dist.append(average - numbers[i])
+    dist.append(abs(average - numbers[i]))
 
 #print(f'{dist:.2f}', end=' ')
 #This does not work, cannot pass a list type to this

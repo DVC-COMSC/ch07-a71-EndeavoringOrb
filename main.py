@@ -5,7 +5,11 @@ dist = []
 for i in range(len(numbers)):
     dist.append(average - numbers[i])
 
-print (f'{dist:.2f}', end=' ')
+#print(f'{dist:.2f}', end=' ')
+#This does not work, cannot pass a list type to this
+
+for i in range(len(dist)):
+    print (f'{dist[i]:.2f}', end=' ')
 # ******************************
 # Make your Code
 # ******************************
